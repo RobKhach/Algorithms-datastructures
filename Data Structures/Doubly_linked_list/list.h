@@ -152,6 +152,16 @@ class list{
             
         }
 
+        int size() const {
+        int count = 0;
+        node* current = head;
+        while (current != nullptr) {
+            ++count;
+            current = current->next;
+        }
+        return count;
+    }
+
         void print_list(){
             node* current = head;
             while(current){

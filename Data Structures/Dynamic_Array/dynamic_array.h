@@ -162,6 +162,14 @@ public:
         clear();
     }
 
+    T top(){
+        if(!isempty()){
+            return arr[--arr_size];
+        }else{
+            throw std::runtime_error("arr is empty");
+        }
+    }
+
 private:
     void resize(int new_capacity) {
         if (new_capacity <= 0) {

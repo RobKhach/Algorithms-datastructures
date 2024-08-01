@@ -119,6 +119,16 @@ class Slist{
             }
         }
 
+        int size() const {
+        int count = 0;
+        Node<T>* current = head;
+        while (current != nullptr) {
+            ++count;
+            current = current->next;
+        }
+        return count;
+    }
+
         bool isEmpty(){
             return head == nullptr;
         }
