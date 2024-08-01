@@ -33,11 +33,11 @@ class TextEditor{
         void type(){
             std::string new_str;
             std::cout << "Type text: ";
-            std::cin.ignore(); // To ignore any leftover newline characters in the input buffer
+            std::cin.ignore();
             std::getline(std::cin, new_str);
             stack_undo.push(text);
             text += new_str;
-            // Clear the redo stack since new text was typed
+
             while (!stack_redo.isempty()) {
                 stack_redo.pop();
             }
