@@ -164,7 +164,7 @@ public:
 
     T top(){
         if(!isempty()){
-            return arr[--arr_size];
+            return arr[arr_size - 1];
         }else{
             throw std::runtime_error("arr is empty");
         }
