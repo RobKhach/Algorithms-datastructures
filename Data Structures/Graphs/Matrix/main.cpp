@@ -65,6 +65,7 @@ int main() {
     // Test for a specific edge existence
     std::cout << "Does an edge exist between 0 and 1? " << (g.hasEdge(0, 1) ? "Yes" : "No") << std::endl;
     std::cout << "Does an edge exist between 1 and 3? " << (g.hasEdge(1, 3) ? "Yes" : "No") << std::endl;
+    std::cout << "Hi from Git" << std::endl;
 
     return 0;
 }
