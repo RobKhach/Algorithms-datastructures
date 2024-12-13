@@ -1,11 +1,9 @@
 #include <iostream>
 
-void swap(float *abs, int *b)
-{
-    int a = *abs;
-	int tmp = a;
-	a = *b;
-	*b = tmp;
+void swap(float *a, int *b) {
+    float temp = *a;   // Store the value of *a
+    *a = (float)(*b);  // Assign the integer value to the float pointer
+    *b = (int)temp;    // Assign the float value (cast to int) to the integer pointer
 }
 
 int partition(int* arr, int low, int high){
