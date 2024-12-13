@@ -1,10 +1,10 @@
 #include <iostream>
 
-void swap(int *b)
+void swap(int *a, int *b)
 {
-	// int tmp = *a;
-	// *a = *b;
-	// *b = tmp;
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 int partition(int* arr, int low, int high){
