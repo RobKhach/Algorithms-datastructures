@@ -49,7 +49,7 @@ int main() {
     tree.preorderTraverse_i();
     std::cout << "\n";
 
-    std::cout << "Iterative postorder traversal: ";
+    std::cout << "Iterative postorder: ";
     tree.postorderTraverse_i();
     std::cout << "\n";
 
